@@ -43,18 +43,3 @@ function App() {
 }
 
 export default App
-
-/*
-  DOMANDE DELLA SFIDA "BLACKOUT"
-
-  1) Con sette server nella griglia si vedrebbero ancora solo sei schede: GrigliaServer
-     scrive a mano servers[0]...servers[5], quindi il settimo non viene mai disegnato
-     (anche se il riepilogo lo conta). Con cinque server servers[5] vale undefined e
-     SchedaServer prova a leggere le proprietà di undefined: la pagina diventa bianca
-     con un errore in console. Il problema si risolve con map(), settimana 8.
-
-  2) Ha funzionato l'idea della settimana 7 che i componenti sono funzioni che ricevono
-     dati tramite props e restituiscono l'interfaccia: i dati scendono da App ai figli
-     (flusso unidirezionale) e i figli si limitano a disegnare quello che ricevono.
-     Cambiando i dati cambia tutto ciò che ne dipende, senza toccare i componenti.
-*/
