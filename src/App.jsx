@@ -8,13 +8,13 @@ import ServerInEvidenza from "./ServerInEvidenza"
 import Avvisi from "./Avvisi"
 
 function App() {
-  // Tutti i calcoli stanno qui: i figli ricevono solo numeri e dati pronti.
+  
   const totale = servers.length
   const ok = contaPerStato(servers, "ok")
   const attenzione = contaPerStato(servers, "attenzione")
   const critici = contaPerStato(servers, "critico")
   const offline = contaPerStato(servers, "offline")
-  const online = totale - offline   // online = tutti tranne gli offline
+  const online = totale - offline 
 
   const cercato = "db-01"
   const serverCercato = trovaServer(servers, cercato)
